@@ -1,0 +1,244 @@
+:root {
+  --bodyy: rgb(250, 233, 236);
+  --white: #fff;
+  --primary: #007bff;
+  --secondery: #6c757d;
+  --success: #28a745;
+  --danger: #dc3545;
+  --warning: #ffc107;
+  --info: #17a2b8;
+  --dark: #343a40;
+  --light: #f8f9fa;
+}
+
+/* text color--- Yazı renklerimiz */
+.tex-primary {
+  color: var(--primary);
+}
+.tex-secondery {
+  color: var(--secondery);
+}
+.tex-succes {
+  color: var(--success);
+}
+.tex-danger {
+  color: var(--danger);
+}
+.tex-warning {
+  color: var(--warning);
+}
+.tex-info {
+  color: var(--info);
+}
+.tex-dark {
+  color: var(--dark);
+}
+.tex-light {
+  color: var(--light);
+}
+
+/* Bg-colors ------ Zemin Renklerimiz */
+.bg-primary {
+  background-color: var(--primary);
+}
+.bg-secondery {
+  background-color: var(--secondery);
+}
+.bg-success {
+  background-color: var(--success);
+}
+.bg-danger {
+  background-color: var(--danger);
+}
+.bg-warning {
+  background-color: var(--warning);
+}
+.bg-info {
+  background-color: var(--info);
+}
+.bg-dark {
+  background-color: var(--dark);
+}
+.bg-light {
+  background-color: var(--light);
+}
+.bg-bodyy {
+  background-color: var(--bodyy);
+}
+/* Buttons */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.btn-primary {
+  color: var(--white);
+  background-color: var(--primary);
+  /* Mavi bir butonumuz olur */
+}
+
+.btn-secondery {
+  color: var(--white);
+  background-color: var(--secondery);
+}
+.btn-success {
+  color: var(--white);
+  background-color: var(--success);
+}
+.btn-danger {
+  color: var(--white);
+  background-color: var(--danger);
+}
+.btn-warning {
+  color: var(--white);
+  background-color: var(--warning);
+}
+.btn-info {
+  color: var(--white);
+  background-color: var(--info);
+}
+.btn-dark {
+  color: var(--white);
+  background-color: var(--dark);
+}
+.btn-light {
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+/* Transparan Butonlar */
+
+.btn-outline-primary {
+  background: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+  /* Mavi transparan bir buton */
+}
+.btn-outline-danger {
+  background: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+.btn-outline-secondery {
+  background: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+.btn-outline-warning {
+  background: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+.btn-outline-succes {
+  background: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+/* Hover olduğunda */
+.btn-outline-primary:hover {
+  background: var(--white);
+  color: var(--primary);
+}
+.btn-outline-secondery:hover {
+  background: var(--white);
+  color: var(--secondery);
+}
+.btn-outline-succes:hover {
+  background: var(--white);
+  color: var(--success);
+}
+.btn-outline-warning:hover {
+  background: var(--white);
+  color: var(--warning);
+}
+.btn-outline-danger:hover {
+  background: var(--white);
+  color: var(--danger);
+}
+
+/* flex items */
+.flex-items {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+.flex-items > div {
+  /* Sadece bu sınıfın altındaki ilk divler için uygula demektir. */
+  padding: 20px;
+  flex-basis: 100%;
+}
+/* flex columns */
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+  /* 2. About kısmının resim ve yazı kısmını yer değştirdik. Satıra yer değiştirme işlemi*/
+}
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.flex-columns .column {
+  flex: 1;
+  /* About kısmında bulunan solda resim sağda açıklama olan kısmını tam ortadan 2 kolonu da yerleştir demiş oluyoruz. */
+}
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 100%;
+}
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3rem;
+  justify-content: center;
+}
+
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+}
+
+/* flex grid */
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0.4rem;
+}
+.flex-grid .column {
+  flex: 25%;
+  padding: 0 0.4rem;
+}
+
+/* section */
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem;
+}
+.section-heder h2 {
+  font-size: 4rem;
+  margin: 2rem 0px;
+}
+.section-padding {
+  padding: 2rem 2rem 4rem;
+}
+
+/* cards */
+.card {
+  color: var(--white);
+  font-weight: 70rem;
+}
+.card-body {
+  padding: 20px;
+}
